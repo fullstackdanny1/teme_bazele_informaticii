@@ -16,7 +16,7 @@
 		return this.planeId;
 	    }
 
-	    public String getTotalEnginePower()
+	    public int getTotalEnginePower()
 	    {
 		return this.totalEnginePower;
 	    }
@@ -32,7 +32,7 @@
 
 	    public void land()
 	    {
-		System.out.println(this.getPlaneId + "- Initiating landing procedure - Enabling airbrakes - Lowering gear - Contacting runway - Decelerating - Stopping engines - Landing complete");
+		System.out.println(this.getPlaneId() + "- Initiating landing procedure - Enabling airbrakes - Lowering gear - Contacting runway - Decelerating - Stopping engines - Landing complete");
             }
 
 }

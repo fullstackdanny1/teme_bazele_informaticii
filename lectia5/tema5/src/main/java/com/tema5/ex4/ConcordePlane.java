@@ -7,12 +7,12 @@ public class ConcordePlane extends CommercialPlane
         super(planeId, totalEnginePower, maxPassengers);
     }       
 
-    public void getSuperSonic()
+    public void goSuperSonic()
     {
         System.out.println(getPlaneId() + "- Supersonic mode activated");
     }
   
-    public void getSubSonic()
+    public void goSubSonic()
     {
         System.out.println(getPlaneId() + "- Supersonic mode ddeactivated");
     }

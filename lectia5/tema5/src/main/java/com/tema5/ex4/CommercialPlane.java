@@ -10,8 +10,8 @@ public class CommercialPlane extends Plane
 	this.maxPassengers = maxPassengers;
     }
 
-    public String getMaxPassengers(){
-        return this.maxPassengers();
+    public int getMaxPassengers(){
+        return this.maxPassengers;
     }
 }
 

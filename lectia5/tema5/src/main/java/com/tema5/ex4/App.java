@@ -2,7 +2,7 @@ package com.tema5.ex4;
 
 public class App
 { 
-   public static void Main(String[] args)
+   public static void main(String[] args)
    {
       Plane boeing = new BoeingPlane("11223344", 150000, 200);
       Plane concorde  = new ConcordePlane("13243544", 170000, 150);
@@ -10,24 +10,22 @@ public class App
       Plane tomcat = new TomCatPlane("11563314", 350000);
 
       boeing.getTotalEnginePower();
-      boeing.getMaxPassangers();
+      ((CommercialPlane)boeing).getMaxPassengers();
       boeing.takeOff();
       boeing.fly();
       boeing.land();
     
       concorde.getTotalEnginePower();
-      concorde.getMaxPassangers();
-      concorde.takeOff();
-      concorde.fly();
+      ((CommercialPlane)concorde).getMaxPassengers();
       concorde.land();
-      concorde.goSuperSonic();
-      concorde.goSubSonic();
+      ((ConcordePlane)concorde).goSuperSonic();
+      ((ConcordePlane)concorde).goSubSonic();
    
-      mig.launchMissile();
-      mig.normalGeometry();
-      mig.highSpeedGeometry();
+      ((FighterPlane)mig).launchMissile();
+      ((MigPlane)mig).normalGeometry();
+      ((MigPlane)mig).highSpeedGeometry();
 
-      tomcat.launchMissile();
-      tomcat.refuel();
+      ((FighterPlane)tomcat).launchMissile();
+      ((TomCatPlane)tomcat).refuel();
    }
 }
